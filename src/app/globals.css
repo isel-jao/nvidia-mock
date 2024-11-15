@@ -80,3 +80,7 @@ body {
 .debug > * > * {
   border: 1px solid blue !important;
 }
+
+.container {
+  @apply mx-auto w-full max-w-screen-2xl px-container;
+}

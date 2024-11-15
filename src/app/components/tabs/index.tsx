@@ -43,7 +43,7 @@ export function Tab({ children, index, className, ...props }: TabProps) {
       {value === index && (
         <motion.div
           layoutId={indicatorId}
-          className="absolute bottom-1 left-0 h-0.5 w-full bg-primary"
+          className="absolute bottom-0 left-0 h-0.5 w-full bg-primary"
         />
       )}
     </li>
@@ -51,7 +51,6 @@ export function Tab({ children, index, className, ...props }: TabProps) {
 }
 
 interface TabsProps extends React.HTMLProps<HTMLUListElement> {
-  value: number;
   defaultValue?: number;
   onValueChange?: (value: number) => void;
 }

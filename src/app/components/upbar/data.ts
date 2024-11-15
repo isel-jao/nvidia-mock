@@ -165,72 +165,207 @@ export const menuItems: MenuItem[] = [
           {
             name: "Application Frameworks",
             items: [
-              { name: "AI Inference - Triton" },
-              { name: "Automotive - DRIVE" },
-              { name: "Cloud-AI Video Streaming - Maxine" },
-              { name: "Computational Lithography - cuLitho" },
-              { name: "Cybersecurity - Morpheus" },
-              { name: "Data Analytics - RAPIDS" },
-              { name: "Generative AI - NeMo" },
-              { name: "Healthcare - Clara" },
-              { name: "High-Performance Computing" },
-              { name: "Intelligent Video Analytics - Metropolis" },
-              { name: "Logistics and Route Optimization - cuOpt" },
-              { name: "Metaverse Applications - Omniverse" },
-              { name: "Recommender Systems - Merlin" },
-              { name: "Robotics - Isaac" },
-              { name: "Speech AI - Riva" },
-              { name: "Telecommunications - Aerial" },
+              {
+                name: "AI Inference - Triton",
+                href: "/products/software/application-frameworks/ai-inference-triton",
+              },
+              {
+                name: "Automotive - DRIVE",
+                href: "/products/software/application-frameworks/automotive-drive",
+              },
+              {
+                name: "Cloud-AI Video Streaming - Maxine",
+                href: "/products/software/application-frameworks/cloud-ai-video-streaming-maxine",
+              },
+              {
+                name: "Computational Lithography - cuLitho",
+                href: "/products/software/application-frameworks/computational-lithography-culitho",
+              },
+              {
+                name: "Cybersecurity - Morpheus",
+                href: "/products/software/application-frameworks/cybersecurity-morpheus",
+              },
+              {
+                name: "Data Analytics - RAPIDS",
+                href: "/products/software/application-frameworks/data-analytics-rapids",
+              },
+              {
+                name: "Generative AI - NeMo",
+                href: "/products/software/application-frameworks/generative-ai-nemo",
+              },
+              {
+                name: "Healthcare - Clara",
+                href: "/products/software/application-frameworks/healthcare-clara",
+              },
+              {
+                name: "High-Performance Computing",
+                href: "/products/software/application-frameworks/high-performance-computing",
+              },
+              {
+                name: "Intelligent Video Analytics - Metropolis",
+                href: "/products/software/application-frameworks/intelligent-video-analytics-metropolis",
+              },
+              {
+                name: "Logistics and Route Optimization - cuOpt",
+                href: "/products/software/application-frameworks/logistics-and-route-optimization-cuopt",
+              },
+              {
+                name: "Metaverse Applications - Omniverse",
+                href: "/products/software/application-frameworks/metaverse-applications-omniverse",
+              },
+              {
+                name: "Recommender Systems - Merlin",
+                href: "/products/software/application-frameworks/recommender-systems-merlin",
+              },
+              {
+                name: "Robotics - Isaac",
+                href: "/products/software/application-frameworks/robotics-isaac",
+              },
+              {
+                name: "Speech AI - Riva",
+                href: "/products/software/application-frameworks/speech-ai-riva",
+              },
+              {
+                name: "Telecommunications - Aerial",
+                href: "/products/software/application-frameworks/telecommunications-aerial",
+              },
             ],
           },
           {
             name: "Apps and Tools",
             items: [
-              { name: "Application Catalog" },
-              { name: "NGC Catalog" },
-              { name: "NVIDIA NGC" },
-              { name: "3D Workflows - Omniverse" },
-              { name: "Data Center" },
-              { name: "GPU Monitoring" },
-              { name: "NVIDIA App for Enterprise" },
-              { name: "NVIDIA RTX Desktop Manager" },
-              { name: "RTX Accelerated Creative Apps" },
-              { name: "Video Conferencing" },
-              { name: "AI Workbench" },
+              {
+                name: "Application Catalog",
+                href: "/products/software/apps-and-tools/application-catalog",
+              },
+              {
+                name: "NGC Catalog",
+                href: "/products/software/apps-and-tools/ngc-catalog",
+              },
+              {
+                name: "NVIDIA NGC",
+                href: "/products/software/apps-and-tools/nvidia-ngc",
+              },
+              {
+                name: "3D Workflows - Omniverse",
+                href: "/products/software/apps-and-tools/3d-workflows-omniverse",
+              },
+              {
+                name: "Data Center",
+                href: "/products/software/apps-and-tools/data-center",
+              },
+              {
+                name: "GPU Monitoring",
+                href: "/products/software/apps-and-tools/gpu-monitoring",
+              },
+              {
+                name: "NVIDIA App for Enterprise",
+                href: "/products/software/apps-and-tools/nvidia-app-for-enterprise",
+              },
+              {
+                name: "NVIDIA RTX Desktop Manager",
+                href: "/products/software/apps-and-tools/nvidia-rtx-desktop-manager",
+              },
+              {
+                name: "RTX Accelerated Creative Apps",
+                href: "/products/software/apps-and-tools/rtx-accelerated-creative-apps",
+              },
+              {
+                name: "Video Conferencing",
+                href: "/products/software/apps-and-tools/video-conferencing",
+              },
+              {
+                name: "AI Workbench",
+                href: "/products/software/apps-and-tools/ai-workbench",
+              },
             ],
           },
           {
             name: "Gaming and Creating",
             items: [
-              { name: "GeForce NOW Cloud Gaming" },
-              { name: "GeForce Experience" },
-              { name: "NVIDIA Broadcast App" },
-              { name: "Animation - Machinima" },
-              { name: "Modding - RTX Remix" },
-              { name: "Studio" },
+              {
+                name: "GeForce NOW Cloud Gaming",
+                href: "/products/software/gaming-and-creating/geforce-now-cloud-gaming",
+              },
+              {
+                name: "GeForce Experience",
+                href: "/products/software/gaming-and-creating/geforce-experience",
+              },
+              {
+                name: "NVIDIA Broadcast App",
+                href: "/products/software/gaming-and-creating/nvidia-broadcast-app",
+              },
+              {
+                name: "Animation - Machinima",
+                href: "/products/software/gaming-and-creating/animation-machinima",
+              },
+              {
+                name: "Modding - RTX Remix",
+                href: "/products/software/gaming-and-creating/modding-rtx-remix",
+              },
+              {
+                name: "Studio",
+                href: "/products/software/gaming-and-creating/studio",
+              },
             ],
           },
           {
             name: "Infrastructure",
             items: [
-              { name: "AI Enterprise Suite" },
-              { name: "Cloud Native Support" },
-              { name: "Cluster Management" },
-              { name: "IO Acceleration" },
-              { name: "Networking" },
-              { name: "Virtual GPU" },
+              {
+                name: "AI Enterprise Suite",
+                href: "/products/software/infrastructure/ai-enterprise-suite",
+              },
+              {
+                name: "Cloud Native Support",
+                href: "/products/software/infrastructure/cloud-native-support",
+              },
+              {
+                name: "Cluster Management",
+                href: "/products/software/infrastructure/cluster-management",
+              },
+              {
+                name: "IO Acceleration",
+                href: "/products/software/infrastructure/io-acceleration",
+              },
+              {
+                name: "Networking",
+                href: "/products/software/infrastructure/networking",
+              },
+              {
+                name: "Virtual GPU",
+                href: "/products/software/infrastructure/virtual-gpu",
+              },
             ],
           },
           {
             name: "Cloud Services",
             items: [
-              { name: "Base Command" },
-              { name: "BioNeMo" },
-              { name: "DGX Cloud" },
-              { name: "NeMo" },
-              { name: "Edify" },
-              { name: "Private Registry" },
-              { name: "Omniverse" },
+              {
+                name: "Base Command",
+                href: "/products/software/cloud-services/base-command",
+              },
+              {
+                name: "BioNeMo",
+                href: "/products/software/cloud-services/bionemo",
+              },
+              {
+                name: "DGX Cloud",
+                href: "/products/software/cloud-services/dgx-cloud",
+              },
+              { name: "NeMo", href: "/products/software/cloud-services/nemo" },
+              {
+                name: "Edify",
+                href: "/products/software/cloud-services/edify",
+              },
+              {
+                name: "Private Registry",
+                href: "/products/software/cloud-services/private-registry",
+              },
+              {
+                name: "Omniverse",
+                href: "/products/software/cloud-services/omniverse",
+              },
             ],
           },
         ],
@@ -243,67 +378,175 @@ export const menuItems: MenuItem[] = [
       {
         name: "Artificial Intelligence",
         items: [
-          { name: "Overview" },
-          { name: "AI Platform" },
-          { name: "AI Inference" },
-          { name: "AI Workflows" },
-          { name: "Conversational AI" },
-          { name: "Custom Models" },
-          { name: "Cybersecurity" },
-          { name: "Data Analytics" },
-          { name: "Generative AI" },
-          { name: "Machine Learning" },
-          { name: "Prediction and Forecasting" },
-          { name: "Speech AI" },
+          {
+            name: "Overview",
+            href: "/solutions/artificial-intelligence/overview",
+          },
+          {
+            name: "AI Platform",
+            href: "/solutions/artificial-intelligence/ai-platform",
+          },
+          {
+            name: "AI Inference",
+            href: "/solutions/artificial-intelligence/ai-inference",
+          },
+          {
+            name: "AI Workflows",
+            href: "/solutions/artificial-intelligence/ai-workflows",
+          },
+          {
+            name: "Conversational AI",
+            href: "/solutions/artificial-intelligence/conversational-ai",
+          },
+          {
+            name: "Custom Models",
+            href: "/solutions/artificial-intelligence/custom-models",
+          },
+          {
+            name: "Cybersecurity",
+            href: "/solutions/artificial-intelligence/cybersecurity",
+          },
+          {
+            name: "Data Analytics",
+            href: "/solutions/artificial-intelligence/data-analytics",
+          },
+          {
+            name: "Generative AI",
+            href: "/solutions/artificial-intelligence/generative-ai",
+          },
+          {
+            name: "Machine Learning",
+            href: "/solutions/artificial-intelligence/machine-learning",
+          },
+          {
+            name: "Prediction and Forecasting",
+            href: "/solutions/artificial-intelligence/prediction-and-forecasting",
+          },
+          {
+            name: "Speech AI",
+            href: "/solutions/artificial-intelligence/speech-ai",
+          },
         ],
       },
       {
         name: "Data Center and Cloud Computing",
         items: [
-          { name: "Overview" },
-          { name: "Accelerated Computing for Enterprise IT" },
-          { name: "Cloud Computing" },
-          { name: "Colocation" },
-          { name: "MLOps" },
-          { name: "Networking" },
-          { name: "Virtualization" },
+          {
+            name: "Overview",
+            href: "/solutions/data-center-and-cloud-computing/overview",
+          },
+          {
+            name: "Accelerated Computing for Enterprise IT",
+            href: "/solutions/data-center-and-cloud-computing/accelerated-computing-for-enterprise-it",
+          },
+          {
+            name: "Cloud Computing",
+            href: "/solutions/data-center-and-cloud-computing/cloud-computing",
+          },
+          {
+            name: "Colocation",
+            href: "/solutions/data-center-and-cloud-computing/colocation",
+          },
+          {
+            name: "MLOps",
+            href: "/solutions/data-center-and-cloud-computing/mlops",
+          },
+          {
+            name: "Networking",
+            href: "/solutions/data-center-and-cloud-computing/networking",
+          },
+          {
+            name: "Virtualization",
+            href: "/solutions/data-center-and-cloud-computing/virtualization",
+          },
         ],
       },
       {
         name: "Design and Simulation",
         items: [
-          { name: "Overview" },
-          { name: "Digital Twin Development" },
-          { name: "Rendering and Visualization" },
-          { name: "Robotics Simulation" },
-          { name: "Vehicle Simulation" },
+          {
+            name: "Overview",
+            href: "/solutions/design-and-simulation/overview",
+          },
+          {
+            name: "Digital Twin Development",
+            href: "/solutions/design-and-simulation/digital-twin-development",
+          },
+          {
+            name: "Rendering and Visualization",
+            href: "/solutions/design-and-simulation/rendering-and-visualization",
+          },
+          {
+            name: "Robotics Simulation",
+            href: "/solutions/design-and-simulation/robotics-simulation",
+          },
+          {
+            name: "Vehicle Simulation",
+            href: "/solutions/design-and-simulation/vehicle-simulation",
+          },
         ],
       },
       {
         name: "Robotics and Edge Computing",
         items: [
-          { name: "Overview" },
-          { name: "Robotics" },
-          { name: "Edge Computing" },
-          { name: "Vision AI" },
+          {
+            name: "Overview",
+            href: "/solutions/robotics-and-edge-computing/overview",
+          },
+          {
+            name: "Robotics",
+            href: "/solutions/robotics-and-edge-computing/robotics",
+          },
+          {
+            name: "Edge Computing",
+            href: "/solutions/robotics-and-edge-computing/edge-computing",
+          },
+          {
+            name: "Vision AI",
+            href: "/solutions/robotics-and-edge-computing/vision-ai",
+          },
         ],
       },
       {
         name: "High-Performance Computing",
         items: [
-          { name: "Overview" },
-          { name: "HPC and AI" },
-          { name: "Scientific Visualization" },
-          { name: "Simulation and Modeling" },
-          { name: "Quantum Computing" },
+          {
+            name: "Overview",
+            href: "/solutions/high-performance-computing/overview",
+          },
+          {
+            name: "HPC and AI",
+            href: "/solutions/high-performance-computing/hpc-and-ai",
+          },
+          {
+            name: "Scientific Visualization",
+            href: "/solutions/high-performance-computing/scientific-visualization",
+          },
+          {
+            name: "Simulation and Modeling",
+            href: "/solutions/high-performance-computing/simulation-and-modeling",
+          },
+          {
+            name: "Quantum Computing",
+            href: "/solutions/high-performance-computing/quantum-computing",
+          },
         ],
       },
       {
         name: "Self-Driving Vehicles",
         items: [
-          { name: "Overview" },
-          { name: "In-Vehicle Computing" },
-          { name: "Infrastructure" },
+          {
+            name: "Overview",
+            href: "/solutions/self-driving-vehicles/overview",
+          },
+          {
+            name: "In-Vehicle Computing",
+            href: "/solutions/self-driving-vehicles/in-vehicle-computing",
+          },
+          {
+            name: "Infrastructure",
+            href: "/solutions/self-driving-vehicles/infrastructure",
+          },
         ],
       },
     ],
@@ -314,26 +557,56 @@ export const menuItems: MenuItem[] = [
       {
         name: "Industries",
         items: [
-          { name: "Overview" },
-          { name: "Architecture, Engineering, Construction & Operations" },
-          { name: "Automotive" },
-          { name: "Consumer Internet" },
-          { name: "Energy" },
-          { name: "Financial Services" },
-          { name: "Gaming" },
-          { name: "Global Public Sector" },
-          { name: "Healthcare and Life Sciences" },
-          { name: "Higher Education and Research" },
-          { name: "Industrial" },
-          { name: "Manufacturing" },
-          { name: "Media and Entertainment" },
-          { name: "Restaurants and Quick-Service" },
-          { name: "Retail and Consumer Packaged Goods" },
-          { name: "Robotics" },
-          { name: "Smart Cities and Spaces" },
-          { name: "Supercomputing" },
-          { name: "Telecommunications" },
-          { name: "US Public Sector" },
+          { name: "Overview", href: "/industries/overview" },
+          {
+            name: "Architecture, Engineering, Construction & Operations",
+            href: "/industries/architecture-engineering-construction-operations",
+          },
+          { name: "Automotive", href: "/industries/automotive" },
+          { name: "Consumer Internet", href: "/industries/consumer-internet" },
+          { name: "Energy", href: "/industries/energy" },
+          {
+            name: "Financial Services",
+            href: "/industries/financial-services",
+          },
+          { name: "Gaming", href: "/industries/gaming" },
+          {
+            name: "Global Public Sector",
+            href: "/industries/global-public-sector",
+          },
+          {
+            name: "Healthcare and Life Sciences",
+            href: "/industries/healthcare-and-life-sciences",
+          },
+          {
+            name: "Higher Education and Research",
+            href: "/industries/higher-education-and-research",
+          },
+          { name: "Industrial", href: "/industries/industrial" },
+          { name: "Manufacturing", href: "/industries/manufacturing" },
+          {
+            name: "Media and Entertainment",
+            href: "/industries/media-and-entertainment",
+          },
+          {
+            name: "Restaurants and Quick-Service",
+            href: "/industries/restaurants-and-quick-service",
+          },
+          {
+            name: "Retail and Consumer Packaged Goods",
+            href: "/industries/retail-and-consumer-packaged-goods",
+          },
+          { name: "Robotics", href: "/industries/robotics" },
+          {
+            name: "Smart Cities and Spaces",
+            href: "/industries/smart-cities-and-spaces",
+          },
+          { name: "Supercomputing", href: "/industries/supercomputing" },
+          {
+            name: "Telecommunications",
+            href: "/industries/telecommunications",
+          },
+          { name: "US Public Sector", href: "/industries/us-public-sector" },
         ],
       },
     ],

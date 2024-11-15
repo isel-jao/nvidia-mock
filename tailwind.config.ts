@@ -11,7 +11,7 @@ export default {
     extend: {
       spacing: {
         container: "clamp(1rem,5vw,5rem)",
-        upbar: "3rem",
+        upbar: "2.5rem",
       },
       colors: {
         background: "hsl(var(--background))",
