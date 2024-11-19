@@ -84,3 +84,12 @@ body {
 .container {
   @apply mx-auto w-full max-w-screen-2xl px-container;
 }
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
