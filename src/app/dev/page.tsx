@@ -1,5 +1,4 @@
 "use client";
-import { Card } from "@/components/ui/card";
 import React, { useId } from "react";
 import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";

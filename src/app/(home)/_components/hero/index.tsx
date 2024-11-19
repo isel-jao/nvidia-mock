@@ -67,7 +67,7 @@ export default function HeroSection() {
           />
         </div>
       ))}
-      <div className="relative z-10 flex min-h-[20rem] max-w-screen-2xl flex-col gap-container lg:flex-row">
+      <div className="relative z-10 mx-auto flex min-h-[20rem] w-full max-w-screen-2xl flex-col gap-container lg:flex-row">
         <div className="flex flex-1 flex-col gap-4">
           <span className="text-xl font-semibold">{tag}</span>
           <h1 className="text-3xl font-bold">{title}</h1>
@@ -78,7 +78,7 @@ export default function HeroSection() {
         </div>
         <div className="flex-1"></div>
       </div>
-      <ul className="relative z-10 flex w-full gap-4">
+      <ul className="relative z-10 mx-auto flex w-full max-w-screen-2xl gap-4">
         {data.map((item, index) => (
           <li
             role="button"
