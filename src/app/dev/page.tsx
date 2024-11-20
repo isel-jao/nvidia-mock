@@ -1,63 +1,33 @@
 "use client";
-import { Button } from "@/components/ui/button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import React from "react";
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import {
+  SlidesSection,
+  SlidesSectionProps,
+} from "../components/slides-section";
 
-const scrollXAmount = 600;
+const data: SlidesSectionProps = {
+  title: "Robotics and Edge AI",
+  subtitle:
+    "The NVIDIA Jetson™ and Isaac™ platforms provide end-to-end solutions to develop and deploy AI-powered autonomous machines and edge computing applications across manufacturing, logistics, healthcare, smart cities, and retail.",
+  slides: Array.from({ length: 10 }).map((_, i) => ({
+    image: `/images/placeholder.svg`,
+    tag: "tag",
+    type: "type",
+    title: "NVIDIA Advances Robot Learning With AI and Simulation Tools",
+    subtitle:
+      "New robot learning workflows and AI world model development tools can help robotics developers accelerate their AI-enabled robot and humanoid projects.",
+    href: `/blogs/blog-${i}`,
+  })),
+  quickLinks: Array.from({ length: 10 }).map((_, i) => ({
+    name: `quick link ${i}`,
+    href: `/quick-link-${i}`,
+  })),
+};
 
 export default function Page() {
-  const ref = React.useRef<HTMLDivElement>(null);
-  const containerRef = React.useRef<HTMLDivElement>(null);
-  const x = useMotionValue(0);
-  const springX = useSpring(x, { stiffness: 300, damping: 30 });
-
   return (
-    <div className="overflow-hidden p-container">
-      <div className="mx-auto flex w-full max-w-screen-md flex-col space-y-4">
-        <div className="flex items-center gap-4">
-          <h3 className="text-lg font-semibold capitalize">title title </h3>
-          <Button
-            className="ml-auto"
-            size="icon"
-            onClick={() => {
-              x.set(x.get() + scrollXAmount);
-            }}
-          >
-            <ChevronLeft size={32} />
-          </Button>
-          <Button
-            size="icon"
-            onClick={() => {
-              x.set(x.get() - scrollXAmount);
-            }}
-          >
-            <ChevronRight size={32} />
-          </Button>
-        </div>
-
-        <motion.div ref={containerRef}>
-          <motion.div
-            drag="x"
-            ref={ref}
-            style={{
-              translateX: springX,
-            }}
-            dragConstraints={containerRef}
-            className="flex h-96 w-fit"
-          >
-            {Array.from({ length: 10 }).map((_, i) => (
-              <div
-                key={i}
-                className="grid aspect-square h-full shrink-0 place-content-center text-3xl odd:bg-gray-100 even:bg-gray-200"
-              >
-                {i + 1}
-              </div>
-            ))}
-          </motion.div>
-        </motion.div>
-        <div className="h-1 w-full bg-foreground/10"></div>
-      </div>
-    </div>
+    <main>
+      <SlidesSection {...data} />
+    </main>
   );
 }
