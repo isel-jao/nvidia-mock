@@ -19,7 +19,7 @@ function CopyRightComponent() {
         <Logo fill="fill-black/70" />
         <span className="text-xl">Morocco</span>
       </div>
-      <div className="flex flex-wrap justify-between gap-4 text-foreground/70">
+      <div className="flex flex-wrap gap-2 text-foreground/70">
         {urls.map((url, index) => (
           <a key={index} href={url.url} className={`hover:text-foreground/100`}>
             {url.name}
