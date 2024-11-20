@@ -90,3 +90,8 @@ body {
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+.container {
+  padding: var(--container-padding);
+  margin: 0 auto;
+}
