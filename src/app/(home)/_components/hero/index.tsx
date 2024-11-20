@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-const duration = 5;
+const duration = 7.5;
 
 const indicatorVariant = {
   hidden: {
@@ -28,12 +28,6 @@ const indicatorVariant = {
 export default function HeroSection() {
   const [current, setCurrent] = React.useState(0);
 
-  //   useEffect(() => {
-  //     const interval = setInterval(() => {
-  //       setCurrent((prev) => (prev + 1) % data.length);
-  //     }, duration * 1000);
-  //     return () => clearInterval(interval);
-  //   }, []);
   useEffect(() => {
     const timeout = setTimeout(() => {
       setCurrent((prev) => (prev + 1) % data.length);
@@ -58,16 +52,18 @@ export default function HeroSection() {
       {data.map((item, index) => (
         <div key={index} className="absolute inset-0">
           <motion.img
-            className={cn("h-full w-full object-cover object-center", {
-              hidden: index !== current,
-            })}
+            className={cn("h-full w-full object-cover object-center", {})}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: index === current ? 1 : 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
             key={index}
             src={item.image}
             alt={item.title}
           />
         </div>
       ))}
-      <div className="container relative z-10 mx-auto flex min-h-[24rem] flex-col gap-container lg:flex-row">
+      <div className="container relative z-10 mx-auto flex min-h-[28rem] flex-col gap-container lg:flex-row">
         <div className="flex flex-1 flex-col gap-6">
           <span className="text-2xl font-semibold">{tag}</span>
           <h1 className="text-5xl font-semibold">{title}</h1>

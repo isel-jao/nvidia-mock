@@ -20,7 +20,7 @@ function Footer({
   links: any[];
 }) {
   return (
-    <div className="dark flex flex-col gap-4 bg-background text-foreground">
+    <div className="dark flex flex-col gap-4 bg-background py-container text-foreground">
       <div className="container flex flex-col gap-[2rem]">
         <div className="grid gap-8 md:grid-cols-3">
           {data.map((item, index) => (

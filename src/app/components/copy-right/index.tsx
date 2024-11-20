@@ -14,7 +14,7 @@ function CopyRightComponent() {
     { name: "Contact", url: "#" },
   ];
   return (
-    <div className="container flex flex-col gap-4 bg-background">
+    <div className="container flex flex-col gap-4 bg-background py-container">
       <div className="flex justify-between">
         <Logo fill="fill-black/70" />
         <span className="text-xl">Morocco</span>

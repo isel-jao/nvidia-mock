@@ -67,8 +67,8 @@ export function SlidesSection(props: SlidesSectionProps) {
   }
 
   return (
-    <section className="container relative h-[38rem]">
-      <div className="flex h-[3rem] items-end gap-4">
+    <section className="relative py-container">
+      <div className="container flex items-end gap-4">
         <h3 className="text-3xl font-semibold capitalize">title title </h3>
         <Button className="ml-auto" size="icon" onClick={handlePrev}>
           <ChevronLeft size={32} />
@@ -77,10 +77,7 @@ export function SlidesSection(props: SlidesSectionProps) {
           <ChevronRight size={32} />
         </Button>
       </div>
-      <div
-        className="carousel-slides h-[calc(38rem-3rem)] py-6"
-        ref={slidesRef}
-      >
+      <div className="carousel-slides bottom-0 py-6" ref={slidesRef}>
         <div className="w-[36rem] shrink-0">
           <p className="text-balance text-xl font-light">{props.subtitle}</p>
           <button

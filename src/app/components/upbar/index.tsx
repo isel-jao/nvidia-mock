@@ -132,7 +132,7 @@ export default function Upbar() {
   const withItems = menuItems.filter((item) => item.items);
   const withHref = menuItems.filter((item) => item.href);
   return (
-    <NavigationMenu className="fixed left-0 top-0 z-20 h-upbar w-full max-w-none justify-start shadow">
+    <NavigationMenu className="fixed left-0 top-0 z-20 h-upbar w-full max-w-none justify-start bg-background shadow">
       <div className="container flex">
         <div className="w-fit">
           <NavigationMenuList className="w-full!">

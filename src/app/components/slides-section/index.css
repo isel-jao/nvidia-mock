@@ -1,6 +1,6 @@
 .carousel-slides {
   @apply sm:[--cw:640px] md:[--cw:768px] lg:[--cw:1024px] xl:[--cw:1280px] 2xl:[--cw:1536px];
-  @apply fixed inset-x-0;
+  @apply inset-x-0;
   display: flex;
   overflow: scroll hidden;
   scroll-behavior: smooth;
