@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       spacing: {
-        container: "clamp(1rem,5vw,5rem)",
+        container: "var(--container-padding)",
         upbar: "2.5rem",
       },
       colors: {
@@ -59,6 +59,9 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      container: {
+        padding: "var(--container-padding)",
       },
     },
   },

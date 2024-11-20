@@ -51,7 +51,7 @@ export default function HeroSection() {
   return (
     <section
       className={cn(
-        "relative flex flex-col gap-12 bg-background px-container pb-12 pt-container text-foreground",
+        "relative flex flex-col gap-12 bg-background pb-12 pt-container text-foreground",
         mode,
       )}
     >
@@ -67,10 +67,10 @@ export default function HeroSection() {
           />
         </div>
       ))}
-      <div className="relative z-10 mx-auto flex min-h-[20rem] w-full max-w-screen-2xl flex-col gap-container lg:flex-row">
-        <div className="flex flex-1 flex-col gap-4">
-          <span className="text-xl font-semibold">{tag}</span>
-          <h1 className="text-3xl font-bold">{title}</h1>
+      <div className="container relative z-10 mx-auto flex min-h-[24rem] flex-col gap-container lg:flex-row">
+        <div className="flex flex-1 flex-col gap-6">
+          <span className="text-2xl font-semibold">{tag}</span>
+          <h1 className="text-5xl font-semibold">{title}</h1>
           <p className="text-lg">{description}</p>
           <Link href={href}>
             <Button>{text}</Button>
@@ -78,7 +78,7 @@ export default function HeroSection() {
         </div>
         <div className="flex-1"></div>
       </div>
-      <ul className="relative z-10 mx-auto flex w-full max-w-screen-2xl gap-4">
+      <ul className="container relative z-10 mx-auto flex gap-4">
         {data.map((item, index) => (
           <li
             role="button"

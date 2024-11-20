@@ -33,6 +33,7 @@ body {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+    --container-padding: clamp(1rem, 5vw, 5rem);
   }
   .dark {
     --background: 222.2 84% 4.9%;
@@ -79,10 +80,6 @@ body {
 }
 .debug > * > * {
   border: 1px solid blue !important;
-}
-
-.container {
-  @apply mx-auto w-full max-w-screen-2xl px-container;
 }
 
 .hide-scrollbar {
