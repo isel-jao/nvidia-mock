@@ -2,6 +2,7 @@ import React from "react";
 import HeroSection from "./_components/hero-section";
 import Navbar from "./_components/navbar";
 import ModelsSection from "./_components/models-section";
+import IntegrationsSection from "./_components/integration-section";
 
 export default function Page() {
   return (
@@ -9,12 +10,7 @@ export default function Page() {
       <HeroSection />
       <Navbar />
       <ModelsSection />
-      <section
-        id="integrations"
-        className="grid h-[200vh] place-content-center border text-4xl"
-      >
-        Integrations
-      </section>
+      <IntegrationsSection />
       <section
         id="run-anywhere"
         className="grid h-[200vh] place-content-center border text-4xl"

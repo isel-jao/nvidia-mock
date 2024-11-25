@@ -12,7 +12,7 @@ export function CustomLink({ name, href, className }: CustomLinkProps) {
     <Link
       href={href}
       className={twMerge(
-        "group flex w-fit items-center gap-2 font-bold",
+        "group flex w-fit items-center gap-1 font-bold",
         className,
       )}
     >

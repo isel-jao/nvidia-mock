@@ -37,7 +37,7 @@ function useActiveLink({ links, marginTop = 0 }: Props) {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [links, marginTop]);
 
   return activeLink;
 }
