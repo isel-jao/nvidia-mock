@@ -11,7 +11,8 @@ export default {
     extend: {
       spacing: {
         container: "var(--container-padding)",
-        upbar: "2.5rem",
+        upbar: "var(--upbar-height)",
+        navbar: "var(--navbar-height)",
       },
       colors: {
         background: "hsl(var(--background))",

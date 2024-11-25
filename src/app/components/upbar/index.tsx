@@ -136,7 +136,7 @@ export default function Upbar() {
       <div className="container flex">
         <div className="w-fit">
           <NavigationMenuList className="w-full!">
-            <NavigationMenuItem className="">
+            <NavigationMenuItem className={cn("cursor-pointer")}>
               <Link href="/" legacyBehavior>
                 <Logo className="h-6 fill-foreground" />
               </Link>
