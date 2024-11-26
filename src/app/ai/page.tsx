@@ -6,6 +6,7 @@ import RunAnyWhereSection from "./_components/run-any-where-section";
 import ModelsSection from "./_components/models-section";
 import GetStartedSection from "./_components/get-started-section";
 import UseCasesSection from "./_components/use-cases-section";
+import ResourcesSection from "./_components/resources-section";
 
 export default function Page() {
   return (
@@ -23,12 +24,7 @@ export default function Page() {
       >
         Ecosystem
       </section>
-      <section
-        id="resources"
-        className="grid h-[100vh] place-content-center border text-4xl"
-      >
-        Resources
-      </section>
+      <ResourcesSection />
       <section
         id="docs"
         className="grid h-[100vh] place-content-center border text-4xl"

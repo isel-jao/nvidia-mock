@@ -4,19 +4,15 @@ import { links } from "../navbar/data";
 import { CustomLink } from "@/app/components/custom-link";
 import { data } from "./data";
 
-export default function UseCasesSection() {
+export default function ResourcesSection() {
   return (
-    <section id={links[4].url.slice(1)}>
+    <section id={links[6].url.slice(1)}>
       <main className="mx-auto w-full max-w-screen-2xl space-y-4 p-container">
-        <h4 className="text-center text-lg font-bold">Use Cases</h4>
+        <h4 className="text-center text-lg font-bold">Resources</h4>
         <h2 className="text-center text-3xl font-bold">
-          Ignite Your Innovation
+          Unlock, Upskill, and Upscale
         </h2>
-        <p className="text-center font-normal">
-          See how NVIDIA APIs support industry use cases and jump-start your AI
-          development with curated examples.
-        </p>
-        <ul className="!mt-12 grid grid-cols-3 gap-6">
+        <ul className="!mt-12 grid grid-cols-[repeat(auto-fit,minmax(18rem,1fr))] gap-6">
           {data.map((item, i) => (
             <li
               key={i}
@@ -24,15 +20,16 @@ export default function UseCasesSection() {
             >
               <img
                 src={item.image}
-                alt={item.name}
+                alt={item.title}
                 className="aspect-video w-full object-cover"
               />
               <div className="flex h-full flex-1 flex-col gap-6 p-6">
-                <h3 className="text-xl font-bold">{item.name}</h3>
+                <h5>{item.tag}</h5>
+                <h3 className="text-xl font-bold">{item.title}</h3>
                 <p>{item.description}</p>
                 <CustomLink
-                  href={item.url}
-                  name="Learn More"
+                  href={item.url.href}
+                  name={item.url.name}
                   className="mt-auto"
                 />
               </div>
