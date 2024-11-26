@@ -1,54 +1,92 @@
-import { OddEvenItem } from "@/components/odd-even-grid";
-
-export const items: OddEvenItem[] = [
+export const models = [
   {
     image:
-      "https://www.nvidia.com/en-us/ai/home/_jcr_content/root/responsivegrid/nv_container_1654645682/nv_container/nv_image.coreimg.100.850.jpeg/1728465995368/nvidia-ai-icon-code.jpeg",
-    title: "lorum ipsum dolor sit amet",
+      "https://build.nvidia.com/_next/image?url=https%3A%2F%2Fassets.ngc.nvidia.com%2Fproducts%2Fapi-catalog%2Fimages%2Fllama-3_1-nemotron-70b-instruct.jpg&w=600&q=80",
+    type: "run anywhere",
+    company: "nvidia",
+    name: "llama-3.1-nemotron-70b-instruct",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam assumenda atque quidem iste porro repellendus! Ullam ut eum neque iste.",
+      "Llama-3.1-Nemotron-70B-Instruct is a large language model customized by NVIDIA in order to improve the helpfulness of LLM generated responses.",
+    tags: ["chat", "language generation"],
   },
   {
     image:
-      "https://www.nvidia.com/en-us/ai/home/_jcr_content/root/responsivegrid/nv_container_1654645682/nv_container_2132353258/nv_image.coreimg.100.850.jpeg/1728465995603/nvidia-ai-icon-tools.jpeg",
-    title: "sed do eiusmod tempor",
+      "https://build.nvidia.com/_next/image?url=https%3A%2F%2Fassets.ngc.nvidia.com%2Fproducts%2Fapi-catalog%2Fimages%2Fllama-3_1-405b-instruct.jpg&w=700&q=80",
+    type: "run anywhere",
+    company: "nvidia",
+    name: "llama-3.2-nemotron-70b-instruct",
     description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    links: [
-      {
-        name: "Learn More About Building With These Tools and NVIDIA NIM",
-        url: "/ai",
-      },
-    ],
+      "Llama-3.2-Nemotron-70B-Instruct is a large language model customized by NVIDIA in order to improve the helpfulness of LLM generated responses.",
+    tags: ["chat", "language generation"],
   },
   {
     image:
-      "https://www.nvidia.com/en-us/ai/home/_jcr_content/root/responsivegrid/nv_container_1654645682/nv_container_copy/nv_image.coreimg.100.850.jpeg/1729578599723/insights-from-enterprise-data-ari-2.jpeg",
-    title: "consectetur adipiscing elit",
+      "https://build.nvidia.com/_next/image?url=https%3A%2F%2Fassets.ngc.nvidia.com%2Fproducts%2Fapi-catalog%2Fimages%2Fllama-3_2-90b-vision-instruct.jpg&w=350&q=80",
+    type: "run anywhere",
+    company: "nvidia",
+    name: "llama-3.3-nemotron-70b-instruct",
     description:
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    links: [
-      {
-        name: "Learn More",
-        url: "/ai",
-      },
-    ],
+      "Llama-3.3-Nemotron-70B-Instruct is a large language model customized by NVIDIA in order to improve the helpfulness of LLM generated responses.",
+    tags: ["chat", "language generation"],
   },
   {
     image:
-      "https://www.nvidia.com/en-us/ai/home/_jcr_content/root/responsivegrid/nv_container_1654645682/nv_container_copy_co/nv_image.coreimg.100.850.jpeg/1729578614239/nim-workflow-blueprint-ari.jpeg",
-    title: "incididunt ut labore et dolore",
+      "https://build.nvidia.com/_next/image?url=https%3A%2F%2Fassets.ngc.nvidia.com%2Fproducts%2Fapi-catalog%2Fimages%2Fllama-3_2-3b-instruct.jpg&w=350&q=80",
+    type: "run anywhere",
+    company: "nvidia",
+    name: "llama-3.4-nemotron-70b-instruct",
     description:
-      "Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris.",
-    links: [
-      {
-        name: "Learn More",
-        url: "/ai",
-      },
-      {
-        name: "Try Now",
-        url: "/ai",
-      },
-    ],
+      "Llama-3.4-Nemotron-70B-Instruct is a large language model customized by NVIDIA in order to improve the helpfulness of LLM generated responses.",
+    tags: ["chat", "language generation"],
+  },
+  {
+    image:
+      "https://build.nvidia.com/_next/image?url=https%3A%2F%2Fassets.ngc.nvidia.com%2Fproducts%2Fapi-catalog%2Fimages%2Fllama-3_1-nemotron-70b-instruct.jpg&w=600&q=80",
+    type: "run anywhere",
+    company: "nvidia",
+    name: "llama-3.5-nemotron-70b-instruct",
+    description:
+      "Llama-3.5-Nemotron-70B-Instruct is a large language model customized by NVIDIA in order to improve the helpfulness of LLM generated responses.",
+    tags: ["chat", "language generation"],
+  },
+  {
+    image:
+      "https://build.nvidia.com/_next/image?url=https%3A%2F%2Fassets.ngc.nvidia.com%2Fproducts%2Fapi-catalog%2Fimages%2Fllama-3_1-nemotron-70b-instruct.jpg&w=600&q=80",
+    type: "run anywhere",
+    company: "nvidia",
+    name: "llama-3.6-nemotron-70b-instruct",
+    description:
+      "Llama-3.6-Nemotron-70B-Instruct is a large language model customized by NVIDIA in order to improve the helpfulness of LLM generated responses.",
+    tags: ["chat", "language generation"],
+  },
+  {
+    image:
+      "https://build.nvidia.com/_next/image?url=https%3A%2F%2Fassets.ngc.nvidia.com%2Fproducts%2Fapi-catalog%2Fimages%2Fllama-3_1-nemotron-70b-instruct.jpg&w=600&q=80",
+    type: "run anywhere",
+    company: "nvidia",
+    name: "llama-3.7-nemotron-70b-instruct",
+    description:
+      "Llama-3.7-Nemotron-70B-Instruct is a large language model customized by NVIDIA in order to improve the helpfulness of LLM generated responses.",
+    tags: ["chat", "language generation"],
+  },
+  {
+    image:
+      "https://build.nvidia.com/_next/image?url=https%3A%2F%2Fassets.ngc.nvidia.com%2Fproducts%2Fapi-catalog%2Fimages%2Fllama-3_1-nemotron-70b-instruct.jpg&w=600&q=80",
+    type: "run anywhere",
+    company: "nvidia",
+    name: "llama-3.8-nemotron-70b-instruct",
+    description:
+      "Llama-3.8-Nemotron-70B-Instruct is a large language model customized by NVIDIA in order to improve the helpfulness of LLM generated responses.",
+    tags: ["chat", "language generation"],
+  },
+  {
+    image:
+      "https://build.nvidia.com/_next/image?url=https%3A%2F%2Fassets.ngc.nvidia.com%2Fproducts%2Fapi-catalog%2Fimages%2Fllama-3_1-nemotron-70b-instruct.jpg&w=600&q=80",
+    type: "run anywhere",
+    company: "nvidia",
+    name: "llama-3.9-nemotron-70b-instruct",
+    description:
+      "Llama-3.9-Nemotron-70B-Instruct is a large language model customized by NVIDIA in order to improve the helpfulness of LLM generated responses.",
+    tags: ["chat", "language generation"],
   },
 ];

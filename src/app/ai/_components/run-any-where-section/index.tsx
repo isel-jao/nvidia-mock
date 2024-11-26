@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { integrations } from "./data";
 
-function IntegrationsCode() {
+function Code() {
   const [active, setActive] = React.useState(0);
   const indicatorId = useId();
   return (
@@ -51,7 +51,7 @@ function IntegrationsCode() {
   );
 }
 
-function IntegrationDescription() {
+function Description() {
   return (
     <ul className="flex w-full flex-1 shrink-0 flex-col gap-6">
       {integrations.map((item, index) => (
@@ -64,11 +64,11 @@ function IntegrationDescription() {
   );
 }
 
-export default function IntegrationsSection() {
+export default function RunAnyWhereSection() {
   return (
     <section
       className="dark bg-black text-foreground"
-      id={links[1].url.slice(1)}
+      id={links[2].url.slice(1)}
     >
       <main
         className="mx-auto w-full max-w-screen-2xl border-foreground/20 p-container"
@@ -105,8 +105,8 @@ export default function IntegrationsSection() {
           className="mx-auto mt-2"
         />
         <div className="mt-container flex gap-6">
-          <IntegrationDescription />
-          <IntegrationsCode />
+          <Description />
+          <Code />
         </div>
       </main>
     </section>

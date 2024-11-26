@@ -1,8 +1,9 @@
 import React from "react";
 import HeroSection from "./_components/hero-section";
 import Navbar from "./_components/navbar";
+import IntegrationsSection from "./_components/integrations-section";
+import RunAnyWhereSection from "./_components/run-any-where-section";
 import ModelsSection from "./_components/models-section";
-import IntegrationsSection from "./_components/integration-section";
 
 export default function Page() {
   return (
@@ -11,12 +12,7 @@ export default function Page() {
       <Navbar />
       <ModelsSection />
       <IntegrationsSection />
-      <section
-        id="run-anywhere"
-        className="grid h-[200vh] place-content-center border text-4xl"
-      >
-        Run Anywhere
-      </section>
+      <RunAnyWhereSection />
       <section
         id="get-started"
         className="grid h-[100vh] place-content-center border text-4xl"
