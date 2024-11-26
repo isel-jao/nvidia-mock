@@ -5,6 +5,7 @@ import IntegrationsSection from "./_components/integrations-section";
 import RunAnyWhereSection from "./_components/run-any-where-section";
 import ModelsSection from "./_components/models-section";
 import GetStartedSection from "./_components/get-started-section";
+import UseCasesSection from "./_components/use-cases-section";
 
 export default function Page() {
   return (
@@ -15,12 +16,7 @@ export default function Page() {
       <IntegrationsSection />
       <RunAnyWhereSection />
       <GetStartedSection />
-      <section
-        id="use-cases"
-        className="grid h-[100vh] place-content-center border text-4xl"
-      >
-        Use Cases
-      </section>
+      <UseCasesSection />
       <section
         id="ecosystem"
         className="grid h-[100vh] place-content-center border text-4xl"
