@@ -10,7 +10,15 @@ export default function IntegrationsSection() {
       className="dark bg-black text-foreground"
       id={links[1].url.slice(1)}
     >
-      <main className="mx-auto w-full max-w-screen-2xl p-container">
+      <main
+        className="mx-auto w-full max-w-screen-2xl p-container"
+        style={{
+          borderImage:
+            "linear-gradient(to right, transparent, hsl(var(--primary)), white, hsl(var(--primary)), transparent)",
+          borderImageSlice: 1,
+          borderTopWidth: 2,
+        }}
+      >
         <p className="text-center font-semibold md:text-lg">Integrations</p>
         <h2 className="text-center text-[clamp(1.5rem,2.3vw,2.3rem)] font-semibold">
           Accelerated AI is Just an API Call Away

@@ -4,6 +4,7 @@ import Navbar from "./_components/navbar";
 import IntegrationsSection from "./_components/integrations-section";
 import RunAnyWhereSection from "./_components/run-any-where-section";
 import ModelsSection from "./_components/models-section";
+import GetStartedSection from "./_components/get-started-section";
 
 export default function Page() {
   return (
@@ -13,12 +14,7 @@ export default function Page() {
       <ModelsSection />
       <IntegrationsSection />
       <RunAnyWhereSection />
-      <section
-        id="get-started"
-        className="grid h-[100vh] place-content-center border text-4xl"
-      >
-        Get Started
-      </section>
+      <GetStartedSection />
       <section
         id="use-cases"
         className="grid h-[100vh] place-content-center border text-4xl"
