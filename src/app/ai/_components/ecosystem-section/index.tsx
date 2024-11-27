@@ -11,7 +11,7 @@ const data = [
 
 export default function EcosystemSection() {
   return (
-    <section id={links[6].url} className="pb-container">
+    <section id={links[5].url.slice(1)} className="pb-container">
       <div
         className="mx-auto flex w-full max-w-screen-2xl flex-col gap-4 px-container pt-container"
         style={{

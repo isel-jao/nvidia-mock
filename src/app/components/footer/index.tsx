@@ -39,7 +39,7 @@ function Footer({
                   ) => (
                     <li
                       key={index}
-                      className="text-[#76b900] hover:text-[#8cc722]"
+                      className="text-primary brightness-125 transition-[filter] hover:brightness-150"
                     >
                       <a href={link.redirect}>{link.name}</a>
                     </li>
