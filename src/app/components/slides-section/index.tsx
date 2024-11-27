@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { CustomLink } from "../custom-link";
 
 export interface SlidesSectionProps
   extends React.HTMLAttributes<HTMLDivElement> {
@@ -69,7 +70,7 @@ export function SlidesSection(props: SlidesSectionProps) {
   return (
     <section className="relative py-container">
       <div className="container flex items-end gap-4">
-        <h3 className="text-3xl font-semibold capitalize">title title </h3>
+        <h3 className="text-3xl font-semibold capitalize">{props.title} </h3>
         <Button className="ml-auto" size="icon" onClick={handlePrev}>
           <ChevronLeft size={32} />
         </Button>
@@ -101,17 +102,7 @@ export function SlidesSection(props: SlidesSectionProps) {
                 className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 font-semibold"
               >
                 {props.quickLinks.map((link, i) => (
-                  <Link
-                    className="group flex gap-1 text-base capitalize"
-                    href={link.href}
-                    key={i}
-                  >
-                    <span>{link.name}</span>
-                    <ChevronRight
-                      size={20}
-                      className="text-primary transition-transform group-hover:translate-x-1 group-hover:scale-105"
-                    />
-                  </Link>
+                  <CustomLink href={link.href} key={i} name={link.name} />
                 ))}
               </motion.div>
             )}
