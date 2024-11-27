@@ -11,9 +11,17 @@ const data = [
 
 export default function EcosystemSection() {
   return (
-    <section id={links[6].url} className="py-container">
-      <div className="mx-auto flex w-full max-w-screen-2xl flex-col gap-4 px-container">
-        <h4 className="text-center text-lg font-bold">Ecosystem</h4>
+    <section id={links[6].url} className="pb-container">
+      <div
+        className="mx-auto flex w-full max-w-screen-2xl flex-col gap-4 px-container pt-container"
+        style={{
+          borderImage:
+            "linear-gradient(to right, transparent, hsl(var(--primary)), black, hsl(var(--primary)), transparent)",
+          borderImageSlice: 1,
+          borderTopWidth: 2,
+        }}
+      >
+        <h4 className="text-center text-xl font-bold">Ecosystem</h4>
         <h2 className="text-center text-3xl font-bold">
           Take Your Enterprise AI Farther, Faster
         </h2>

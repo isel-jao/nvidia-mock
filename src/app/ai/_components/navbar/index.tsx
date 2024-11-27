@@ -48,7 +48,7 @@ export default function Navbar() {
   });
   const indicatorId = useId();
   return (
-    <nav className="h-navbar dark sticky top-upbar z-10 bg-gray-900 text-gray-200">
+    <nav className="dark sticky top-upbar z-20 h-navbar bg-gray-900 text-gray-200">
       <ul className="mx-auto flex w-full max-w-screen-2xl items-center gap-6 px-container">
         {links.map((link, index) => {
           const isActive =
@@ -63,7 +63,7 @@ export default function Navbar() {
                   if (!target) return;
                   target.scrollIntoView({ behavior: "smooth" });
                 }}
-                className={cn("h-navbar flex items-center")}
+                className={cn("flex h-navbar items-center")}
               >
                 {link.name}
               </a>

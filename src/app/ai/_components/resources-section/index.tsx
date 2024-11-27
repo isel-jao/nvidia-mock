@@ -7,8 +7,16 @@ import { data } from "./data";
 export default function ResourcesSection() {
   return (
     <section id={links[6].url.slice(1)}>
-      <main className="mx-auto w-full max-w-screen-2xl space-y-4 p-container">
-        <h4 className="text-center text-lg font-bold">Resources</h4>
+      <main
+        className="mx-auto w-full max-w-screen-2xl space-y-4 p-container"
+        style={{
+          borderImage:
+            "linear-gradient(to right, transparent, hsl(var(--primary)), black, hsl(var(--primary)), transparent)",
+          borderImageSlice: 1,
+          borderTopWidth: 2,
+        }}
+      >
+        <h4 className="text-center text-xl font-bold">Resources</h4>
         <h2 className="text-center text-3xl font-bold">
           Unlock, Upskill, and Upscale
         </h2>

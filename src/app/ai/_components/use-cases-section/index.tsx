@@ -8,7 +8,7 @@ export default function UseCasesSection() {
   return (
     <section id={links[4].url.slice(1)}>
       <main className="mx-auto w-full max-w-screen-2xl space-y-4 p-container">
-        <h4 className="text-center text-lg font-bold">Use Cases</h4>
+        <h4 className="text-center text-xl font-bold">Use Cases</h4>
         <h2 className="text-center text-3xl font-bold">
           Ignite Your Innovation
         </h2>
