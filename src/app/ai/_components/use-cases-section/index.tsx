@@ -12,7 +12,7 @@ export default function UseCasesSection() {
         <h2 className="text-center text-3xl font-bold">
           Ignite Your Innovation
         </h2>
-        <p className="text-center font-normal">
+        <p className="text-center text-lg font-normal">
           See how NVIDIA APIs support industry use cases and jump-start your AI
           development with curated examples.
         </p>

@@ -8,6 +8,7 @@ import GetStartedSection from "./_components/get-started-section";
 import UseCasesSection from "./_components/use-cases-section";
 import ResourcesSection from "./_components/resources-section";
 import DocumentationSection from "./_components/documentation-section";
+import EcosystemSection from "./_components/ecosystem-section";
 
 export default function Page() {
   return (
@@ -19,12 +20,7 @@ export default function Page() {
       <RunAnyWhereSection />
       <GetStartedSection />
       <UseCasesSection />
-      <section
-        id="ecosystem"
-        className="grid h-[100vh] place-content-center border text-4xl"
-      >
-        Ecosystem
-      </section>
+      <EcosystemSection />
       <ResourcesSection />
       <DocumentationSection />
     </main>
