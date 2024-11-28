@@ -2,19 +2,10 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
-import Upbar from "./components/upbar";
-import Footer from "./components/footer";
-import {
-  Facebook,
-  Github,
-  Instagram,
-  Linkedin,
-  Mail,
-  TwitchIcon,
-  Youtube,
-} from "lucide-react";
-import { Button } from "@/components/ui/button";
-import CopyRightComponent from "./components/copy-right";
+// import Upbar from "./components/upbar";
+// import CopyRightComponent from "./components/copy-right";
+// import NvidiaFooter from "./components/nvidia-footer";
+import MiniUpbar from "./components/mini-upbar";
 
 const BeVietnamPro = localFont({
   src: [
@@ -84,153 +75,11 @@ export default function RootLayout({
           BeVietnamPro.className,
         )}
       >
-        <Upbar />
+        {/* <Upbar /> */}
+        <MiniUpbar />
         {children}
-        <Footer
-          title="test title"
-          data={[
-            {
-              title: "Company Information",
-              links: [
-                {
-                  name: "About Us",
-                  redirect: "/about",
-                },
-                {
-                  name: "Company Overview",
-                  redirect: "/company-overview",
-                },
-                {
-                  name: "Investors",
-                  redirect: "/investors",
-                },
-                {
-                  name: "Venture Capital (NVentures)",
-                  redirect: "/nventures",
-                },
-                {
-                  name: "NVIDIA Foundation",
-                  redirect: "/nvidia-foundation",
-                },
-                {
-                  name: "Research",
-                  redirect: "/research",
-                },
-                {
-                  name: "Corporate Sustainability",
-                  redirect: "/corporate-sustainability",
-                },
-                {
-                  name: "Technologies",
-                  redirect: "/technologies",
-                },
-                {
-                  name: "Careers",
-                  redirect: "/careers",
-                },
-              ],
-            },
-            {
-              title: "Company Information",
-              links: [
-                {
-                  name: "About Us",
-                  redirect: "/about",
-                },
-                {
-                  name: "Company Overview",
-                  redirect: "/company-overview",
-                },
-                {
-                  name: "Investors",
-                  redirect: "/investors",
-                },
-                {
-                  name: "Venture Capital (NVentures)",
-                  redirect: "/nventures",
-                },
-                {
-                  name: "NVIDIA Foundation",
-                  redirect: "/nvidia-foundation",
-                },
-                {
-                  name: "Research",
-                  redirect: "/research",
-                },
-                {
-                  name: "Corporate Sustainability",
-                  redirect: "/corporate-sustainability",
-                },
-                {
-                  name: "Technologies",
-                  redirect: "/technologies",
-                },
-                {
-                  name: "Careers",
-                  redirect: "/careers",
-                },
-              ],
-            },
-            {
-              title: "Company Information",
-              links: [
-                {
-                  name: "About Us",
-                  redirect: "/about",
-                },
-                {
-                  name: "Company Overview",
-                  redirect: "/company-overview",
-                },
-                {
-                  name: "Investors",
-                  redirect: "/investors",
-                },
-                {
-                  name: "Venture Capital (NVentures)",
-                  redirect: "/nventures",
-                },
-                {
-                  name: "NVIDIA Foundation",
-                  redirect: "/nvidia-foundation",
-                },
-                {
-                  name: "Research",
-                  redirect: "/research",
-                },
-                {
-                  name: "Corporate Sustainability",
-                  redirect: "/corporate-sustainability",
-                },
-                {
-                  name: "Technologies",
-                  redirect: "/technologies",
-                },
-                {
-                  name: "Careers",
-                  redirect: "/careers",
-                },
-              ],
-            },
-          ]}
-          links={[
-            { redirect: "/facebook", icon: <Facebook /> },
-            { redirect: "/linkedin", icon: <Linkedin /> },
-            { redirect: "/youtube", icon: <Youtube /> },
-            { redirect: "/instagram", icon: <Instagram /> },
-            { redirect: "/twitch", icon: <TwitchIcon /> },
-            { redirect: "/github", icon: <Github /> },
-          ]}
-        >
-          <div className="flex items-center gap-4">
-            <Mail className="h-10 w-20 text-[#76b900]" />
-            <span className="text-lg">Sign Up for NVIDIA News</span>
-            <Button className="bg-[#76b900] text-white hover:bg-[#8cc722]">
-              Subscribe
-            </Button>
-          </div>
-        </Footer>
-        <CopyRightComponent />
+        {/* <NvidiaFooter /> */}
+        {/* <CopyRightComponent /> */}
       </body>
     </html>
   );

@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { Button } from "@/components/ui/button";
+import { Mail } from "lucide-react";
 import React from "react";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function Footer({
   data,
-  children,
-  title,
   links,
 }: {
   data: {
@@ -15,7 +15,6 @@ function Footer({
       redirect: string;
     }[];
   }[];
-  children: React.ReactNode;
   title: string;
   links: any[];
 }) {
@@ -50,9 +49,15 @@ function Footer({
           ))}
         </div>
         <div className="flex min-h-[4rem] flex-wrap items-center justify-between">
-          {children}
+          <div className="flex items-center gap-4">
+            <Mail className="text-primary" size={40} />
+            <span className="text-lg">Sign Up for NVIDIA News</span>
+            <Button>Subscribe</Button>
+          </div>
           <div className="flex gap-2">
-            <span className="text-xl font-light">{title}</span>
+            <span className="text-lg font-light capitalize text-foreground/70">
+              fallow digieye
+            </span>
             {
               // eslint-disable-next-line @typescript-eslint/no-explicit-any
               links.map(
