@@ -21,21 +21,21 @@ export default function EcosystemSection() {
           borderTopWidth: 2,
         }}
       >
-        <h4 className="text-center text-xl font-bold">Ecosystem</h4>
-        <h2 className="text-center text-3xl font-bold">
+        <h4 className="text-center text-lg font-bold xl:text-xl">Ecosystem</h4>
+        <h2 className="text-center text-xl font-bold lg:text-2xl xl:text-3xl">
           Take Your Enterprise AI Farther, Faster
         </h2>
-        <p className="mx-auto max-w-screen-lg text-balance text-center text-lg font-normal">
+        <p className="mx-auto max-w-screen-lg text-balance text-center font-normal lg:text-lg">
           Join leading partners to develop your AI applications with models,
           toolkits, vector databases, frameworks, and infrastructure from our
           ecosystem.
         </p>
       </div>
       <div className="mt-4">
-        <Marquee pauseOnHover className="[--duration:40s]">
+        <Marquee pauseOnHover className="h-24 [--duration:40s] md:h-32">
           <img src={data[0]} alt="Nvidia AI Partners" />
         </Marquee>
-        <Marquee pauseOnHover className="[--duration:50s]">
+        <Marquee pauseOnHover className="h-24 [--duration:50s] md:h-32">
           <img src={data[1]} alt="Nvidia AI Partners" />
         </Marquee>
       </div>

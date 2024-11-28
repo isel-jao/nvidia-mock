@@ -19,8 +19,8 @@ export default function Page() {
       {/* <IntegrationsSection /> */}
       {/* <RunAnyWhereSection /> */}
       {/* <GetStartedSection /> */}
-      <UseCasesSection />
-      {/* <EcosystemSection /> */}
+      {/* <UseCasesSection /> */}
+      <EcosystemSection />
       {/* <ResourcesSection /> */}
       {/* <DocumentationSection /> */}
     </main>
