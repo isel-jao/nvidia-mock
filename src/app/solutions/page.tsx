@@ -13,16 +13,16 @@ import EcosystemSection from "./_components/ecosystem-section";
 export default function Page() {
   return (
     <main className="[&>*]:scroll-m-[calc(var(--upbar-height)+var(--navbar-height)-4px)]">
-      {/* <HeroSection /> */}
-      {/* <Navbar /> */}
-      {/* <ModelsSection /> */}
-      {/* <IntegrationsSection /> */}
-      {/* <RunAnyWhereSection /> */}
-      {/* <GetStartedSection /> */}
-      {/* <UseCasesSection /> */}
-      {/* <EcosystemSection /> */}
+      <HeroSection />
+      <Navbar />
+      <ModelsSection />
+      <IntegrationsSection />
+      <RunAnyWhereSection />
+      <GetStartedSection />
+      <UseCasesSection />
+      <EcosystemSection />
       <ResourcesSection />
-      {/* <DocumentationSection /> */}
+      <DocumentationSection />
     </main>
   );
 }

@@ -12,14 +12,16 @@ export function CustomLink({ name, href, className }: CustomLinkProps) {
     <Link
       href={href}
       className={twMerge(
-        "group flex w-fit items-center gap-1 font-bold",
+        "group flex w-fit flex-wrap items-center gap-1 font-bold",
         className,
       )}
     >
-      <span>{name}</span>
+      {name.split(" ").map((word, index) => (
+        <span key={index}>{word}</span>
+      ))}
       <ChevronRightIcon
         strokeWidth={3}
-        className="text-primary transition-[color,transform] duration-500 group-hover:translate-x-1 group-hover:text-foreground"
+        className="shrink-0 text-primary transition-[color,transform] duration-500 group-hover:translate-x-1 group-hover:text-foreground"
       />
     </Link>
   );
