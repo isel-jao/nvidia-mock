@@ -28,7 +28,7 @@ const links: LinkItem[] = [
 export default function MiniUpbar() {
   return (
     <Sheet>
-      <header className="fixed left-0 top-0 h-upbar w-full shadow">
+      <header className="fixed left-0 top-0 z-10 h-upbar w-full bg-background shadow">
         <nav className="container flex h-full items-center gap-4">
           <Link href="/">
             <Logo className="h-7 w-24" />

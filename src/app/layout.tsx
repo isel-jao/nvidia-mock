@@ -3,8 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
 // import Upbar from "./components/upbar";
-// import CopyRightComponent from "./components/copy-right";
-// import NvidiaFooter from "./components/nvidia-footer";
+import CopyRightComponent from "./components/copy-right";
+import NvidiaFooter from "./components/nvidia-footer";
 import MiniUpbar from "./components/mini-upbar";
 
 const BeVietnamPro = localFont({

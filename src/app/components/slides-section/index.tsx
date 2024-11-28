@@ -110,7 +110,7 @@ export function SlidesSection(props: SlidesSectionProps) {
         </Button>
       </div>
       <div className="carousel-slides bottom-0 py-6" ref={slidesRef}>
-        <div className="w-[min(36rem,100vw-var(--container-padding)*2)] shrink-0 max-md:hidden">
+        <div className="mr-4 w-[min(36rem,100vw-var(--container-padding)*2)] shrink-0 max-md:hidden">
           <p className="text-balance text-xl font-light">{props.subtitle}</p>
           <button
             className="mt-6 flex items-center gap-1 px-0 text-base font-semibold capitalize"
@@ -143,7 +143,12 @@ export function SlidesSection(props: SlidesSectionProps) {
           <Link
             href={slide.href}
             key={i}
-            className="ml-4 w-[min(24rem,100vw-var(--container-padding)*2)] shrink-0"
+            className={cn(
+              "w-[min(24rem,100vw-var(--container-padding)*2)] shrink-0",
+              {
+                "mr-4": i !== props.slides.length - 1,
+              },
+            )}
           >
             <Card
               key={i}
