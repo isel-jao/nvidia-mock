@@ -18,8 +18,8 @@ export default function Page() {
       {/* <ModelsSection /> */}
       {/* <IntegrationsSection /> */}
       {/* <RunAnyWhereSection /> */}
-      <GetStartedSection />
-      {/* <UseCasesSection /> */}
+      {/* <GetStartedSection /> */}
+      <UseCasesSection />
       {/* <EcosystemSection /> */}
       {/* <ResourcesSection /> */}
       {/* <DocumentationSection /> */}
