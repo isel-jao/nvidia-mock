@@ -20,8 +20,8 @@ export default function Page() {
       {/* <RunAnyWhereSection /> */}
       {/* <GetStartedSection /> */}
       {/* <UseCasesSection /> */}
-      <EcosystemSection />
-      {/* <ResourcesSection /> */}
+      {/* <EcosystemSection /> */}
+      <ResourcesSection />
       {/* <DocumentationSection /> */}
     </main>
   );
