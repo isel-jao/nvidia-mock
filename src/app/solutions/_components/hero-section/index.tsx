@@ -40,19 +40,19 @@ export default function HeroSection() {
           <h1 className="text-[clamp(1.5rem,3vw,3rem)] font-semibold">
             Build Generative AI With NVIDIA NIM
           </h1>
-          <p className="text-xl">
+          <p className="xl:text-lg 2xl:text-xl">
             Explore the latest optimized AI models, connect applications to data
             with NVIDIA Blueprints, and deploy anywhere with NVIDIA NIM
             microservices.
           </p>
-          <div className="mt-4 flex gap-4">
-            <Button size="lg" className="text-lg font-semibold">
+          <div className="mt-4 mt-auto flex flex-wrap gap-4">
+            <Button size="lg" className="text-lg font-semibold max-sm:w-full">
               Try Now
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-2 border-primary text-lg font-semibold"
+              className="border-2 border-primary text-lg font-semibold max-sm:w-full"
             >
               <PlayIcon className="mr-2 h-6 w-6" />
               Watch Video
