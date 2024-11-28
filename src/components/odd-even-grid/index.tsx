@@ -21,7 +21,10 @@ export default function OddEven({ items, className, ...props }: OddEvenProps) {
   return (
     <ul className={twMerge("flex flex-col", className)} {...props}>
       {items.map((item, index) => (
-        <li key={index} className="flex gap-8 odd:flex-row-reverse">
+        <li
+          key={index}
+          className="flex gap-8 odd:flex-row-reverse max-md:!flex-col"
+        >
           <div className="flex flex-1 flex-col justify-center py-container">
             <h3 className="text-2xl font-semibold md:mb-6">{item.title}</h3>
             <p className="mb-6 font-light">{item.description}</p>

@@ -15,8 +15,8 @@ export default function Page() {
     <main className="[&>*]:scroll-m-[calc(var(--upbar-height)+var(--navbar-height)-4px)]">
       {/* <HeroSection /> */}
       {/* <Navbar /> */}
-      <ModelsSection />
-      {/* <IntegrationsSection /> */}
+      {/* <ModelsSection /> */}
+      <IntegrationsSection />
       {/* <RunAnyWhereSection /> */}
       {/* <GetStartedSection /> */}
       {/* <UseCasesSection /> */}
