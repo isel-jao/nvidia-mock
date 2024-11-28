@@ -48,7 +48,7 @@ export default function Navbar() {
   });
   const indicatorId = useId();
   return (
-    <nav className="dark sticky top-upbar z-20 h-navbar bg-gray-900 text-gray-200">
+    <nav className="dark sticky top-upbar z-20 h-navbar bg-gray-900 text-gray-200 max-lg:hidden">
       <ul className="mx-auto flex w-full max-w-screen-2xl items-center gap-6 px-container">
         {links.map((link, index) => {
           const isActive =
