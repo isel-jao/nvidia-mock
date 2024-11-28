@@ -65,9 +65,13 @@ export default function HeroSection() {
       ))}
       <div className="container relative z-10 mx-auto flex min-h-[28rem] flex-col gap-container lg:flex-row">
         <div className="flex flex-1 flex-col gap-6">
-          <span className="text-2xl font-semibold">{tag}</span>
-          <h1 className="text-5xl font-semibold">{title}</h1>
-          <p className="text-lg">{description}</p>
+          <span className="font-semibold lg:text-lg xl:text-xl 2xl:text-2xl">
+            {tag}
+          </span>
+          <h1 className="text-2xl font-semibold lg:text-3xl xl:text-4xl 2xl:text-5xl">
+            {title}
+          </h1>
+          <p className="lg:text-lg">{description}</p>
           <Link href={href}>
             <Button>{text}</Button>
           </Link>
@@ -95,8 +99,10 @@ export default function HeroSection() {
                 animate={index === current ? "visible" : "hidden"}
               />
             </div>
-            <span className="text-sm">{item.tags[0]}</span>
-            <h2 className="line-clamp-2 text-xs font-light">{item.title}</h2>
+            <span className="text-sm max-md:hidden">{item.tags[0]}</span>
+            <h2 className="line-clamp-2 text-xs font-light max-md:hidden">
+              {item.title}
+            </h2>
           </li>
         ))}
       </ul>
