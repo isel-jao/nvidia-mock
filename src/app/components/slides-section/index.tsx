@@ -69,8 +69,39 @@ export function SlidesSection(props: SlidesSectionProps) {
 
   return (
     <section className="relative py-container">
-      <div className="container flex items-end gap-4">
-        <h3 className="text-3xl font-semibold capitalize">{props.title} </h3>
+      <div className="container hidden pb-8 pt-container max-md:block">
+        <p className="text-balance text-xl font-light">{props.subtitle}</p>
+        <button
+          className="mt-6 flex items-center gap-1 px-0 text-base font-semibold capitalize"
+          onClick={() => setShowLinks((prev) => !prev)}
+        >
+          <ChevronDown
+            size={24}
+            className={cn("text-primary transition-transform duration-300", {
+              "rotate-180": showLinks,
+            })}
+          />
+          <span>quick links</span>
+        </button>
+        <AnimatePresence>
+          {showLinks && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 font-semibold"
+            >
+              {props.quickLinks.map((link, i) => (
+                <CustomLink href={link.href} key={i} name={link.name} />
+              ))}
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+      <div className="container flex items-end gap-4 max-md:hidden">
+        <h3 className="text-xl font-semibold capitalize xl:text-2xl 2xl:text-3xl">
+          {props.title}{" "}
+        </h3>
         <Button className="ml-auto" size="icon" onClick={handlePrev}>
           <ChevronLeft size={32} />
         </Button>
@@ -79,7 +110,7 @@ export function SlidesSection(props: SlidesSectionProps) {
         </Button>
       </div>
       <div className="carousel-slides bottom-0 py-6" ref={slidesRef}>
-        <div className="w-[36rem] shrink-0">
+        <div className="w-[min(36rem,100vw-var(--container-padding)*2)] shrink-0 max-md:hidden">
           <p className="text-balance text-xl font-light">{props.subtitle}</p>
           <button
             className="mt-6 flex items-center gap-1 px-0 text-base font-semibold capitalize"
@@ -109,7 +140,11 @@ export function SlidesSection(props: SlidesSectionProps) {
           </AnimatePresence>
         </div>
         {props.slides.map((slide, i) => (
-          <Link href={slide.href} key={i} className="ml-4 w-[24rem] shrink-0">
+          <Link
+            href={slide.href}
+            key={i}
+            className="ml-4 w-[min(24rem,100vw-var(--container-padding)*2)] shrink-0"
+          >
             <Card
               key={i}
               id={`slide-${i}`}
