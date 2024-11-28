@@ -12,7 +12,7 @@ function Code() {
   const [active, setActive] = React.useState(0);
   const indicatorId = useId();
   return (
-    <div className="flex w-1 flex-1 flex-col gap-2 overflow-hidden">
+    <div className="flex w-full flex-1 flex-col gap-2 overflow-hidden md:w-1">
       <ul className="flex max-w-full gap-2">
         {integrations.map((item, index) => (
           <li key={item.name} className="relative">
@@ -56,8 +56,12 @@ function Description() {
     <ul className="flex w-full flex-1 shrink-0 flex-col gap-6">
       {integrations.map((item, index) => (
         <li key={index} className="flex flex-col gap-3">
-          <h4 className="text-2xl font-semibold capitalize">{item.name}</h4>
-          <p className="text-balance font-light">{item.description}</p>
+          <h4 className="text-lg font-semibold capitalize xl:text-xl 2xl:text-2xl">
+            {item.name}
+          </h4>
+          <p className="text-balance text-sm font-light lg:text-base">
+            {item.description}
+          </p>
         </li>
       ))}
     </ul>
@@ -104,7 +108,7 @@ export default function RunAnyWhereSection() {
           href="/deploy"
           className="mx-auto mt-2"
         />
-        <div className="mt-container flex gap-6">
+        <div className="mt-container flex gap-6 max-md:flex-col">
           <Description />
           <Code />
         </div>

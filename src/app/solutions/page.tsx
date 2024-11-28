@@ -16,8 +16,8 @@ export default function Page() {
       {/* <HeroSection /> */}
       {/* <Navbar /> */}
       {/* <ModelsSection /> */}
-      <IntegrationsSection />
-      {/* <RunAnyWhereSection /> */}
+      {/* <IntegrationsSection /> */}
+      <RunAnyWhereSection />
       {/* <GetStartedSection /> */}
       {/* <UseCasesSection /> */}
       {/* <EcosystemSection /> */}
