@@ -53,7 +53,10 @@ export default function ModelsSection() {
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             {models.map((item, i) => (
-              <SwiperSlide key={i} className="max-w-80 select-none">
+              <SwiperSlide
+                key={i}
+                className="max-w-[min(20rem,100vw-var(--container-padding)*2)] select-none"
+              >
                 <div className="group relative flex h-full select-none flex-col gap-2 overflow-hidden rounded-xl border bg-black/50 p-4 transition-colors duration-1000 hover:bg-black/75">
                   <img
                     src={item.image}
