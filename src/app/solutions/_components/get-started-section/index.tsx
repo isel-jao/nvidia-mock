@@ -56,11 +56,15 @@ export default function GetStartedSection() {
         }}
       >
         <main className="mx-auto w-full max-w-screen-2xl px-container py-container">
-          <h2 className="text-center text-4xl font-semibold">Get Started</h2>
-          <div className="mt-8 grid grid-cols-2 gap-6">
+          <h2 className="text-center text-xl font-semibold lg:text-2xl xl:text-3xl 2xl:text-4xl">
+            Get Started
+          </h2>
+          <div className="mt-8 grid gap-6 lg:grid-cols-2">
             {data.map((item, i) => (
               <div key={i} className="rounded-xl bg-foreground/10 p-6">
-                <h3 className="text-2xl font-bold">{item.title}</h3>
+                <h3 className="text-lg font-bold xl:text-xl 2xl:text-2xl">
+                  {item.title}
+                </h3>
                 <p className="mt-7 font-light">{item.description}</p>
                 <ul>
                   {item.points.map((point, i) => (
@@ -68,7 +72,10 @@ export default function GetStartedSection() {
                       key={i}
                       className="mt-2 flex items-center gap-2 font-light"
                     >
-                      <CheckIcon className="text-green-500" size={20} />
+                      <CheckIcon
+                        className="shrink-0 text-green-500"
+                        size={20}
+                      />
                       <span>{point}</span>
                     </li>
                   ))}
@@ -88,17 +95,17 @@ export default function GetStartedSection() {
         </main>
       </section>
       <section className="dark bg-black text-foreground">
-        <main className="relative mx-auto grid w-full max-w-screen-2xl grid-cols-2 p-container">
+        <main className="relative mx-auto grid w-full max-w-screen-2xl p-container lg:grid-cols-2">
           <img
             src="https://www.nvidia.com/content/dam/en-zz/Solutions/nemo-megatron/nvidia-ai-foundry-bm-m460-d.jpg"
             alt=""
             className="absolute inset-0 h-full w-full object-cover"
           />
           <div className="relative z-10 space-y-6">
-            <h2 className="text-3xl font-bold">
+            <h2 className="text-lg font-bold lg:text-xl xl:text-2xl 2xl:text-3xl">
               Build Custom Generative AI Models With NVIDIA AI Foundry
             </h2>
-            <p className="text-balance font-light">
+            <p className="text-balance text-sm font-light md:text-base">
               Access foundation models, enterprise software, accelerated
               computing, and AI expertise to build, fine-tune, and deploy custom
               models for your enterprise applications.

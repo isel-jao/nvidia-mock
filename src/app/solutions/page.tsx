@@ -17,8 +17,8 @@ export default function Page() {
       {/* <Navbar /> */}
       {/* <ModelsSection /> */}
       {/* <IntegrationsSection /> */}
-      <RunAnyWhereSection />
-      {/* <GetStartedSection /> */}
+      {/* <RunAnyWhereSection /> */}
+      <GetStartedSection />
       {/* <UseCasesSection /> */}
       {/* <EcosystemSection /> */}
       {/* <ResourcesSection /> */}
