@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 
 export const footerData = {
-  title: "Follow NVIDIA",
+  title: "Follow Digieye",
   data: [
     {
       title: "Company Information",
@@ -30,7 +30,7 @@ export const footerData = {
           redirect: "/nventures",
         },
         {
-          name: "NVIDIA Foundation",
+          name: "Digieye Foundation",
           redirect: "/nvidia-foundation",
         },
         {
@@ -71,7 +71,7 @@ export const footerData = {
           redirect: "/nventures",
         },
         {
-          name: "NVIDIA Foundation",
+          name: "Digieye Foundation",
           redirect: "/nvidia-foundation",
         },
         {
@@ -112,7 +112,7 @@ export const footerData = {
           redirect: "/nventures",
         },
         {
-          name: "NVIDIA Foundation",
+          name: "Digieye Foundation",
           redirect: "/nvidia-foundation",
         },
         {

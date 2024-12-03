@@ -51,7 +51,7 @@ function Footer({
         <div className="flex min-h-[4rem] flex-wrap items-center justify-between">
           <div className="flex items-center gap-4">
             <Mail className="text-primary" size={40} />
-            <span className="text-lg">Sign Up for NVIDIA News</span>
+            <span className="text-lg">Sign Up for Digieye News</span>
             <Button>Subscribe</Button>
           </div>
           <div className="flex gap-2">

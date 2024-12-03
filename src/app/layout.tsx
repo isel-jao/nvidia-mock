@@ -3,9 +3,10 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
 // import Upbar from "./components/upbar";
-import CopyRightComponent from "./components/copy-right";
-import NvidiaFooter from "./components/nvidia-footer";
+
 import MiniUpbar from "./components/mini-upbar";
+// import CopyRightComponent from "./components/copy-right";
+// import NvidiaFooter from "./components/nvidia-footer";
 
 const BeVietnamPro = localFont({
   src: [
@@ -58,8 +59,8 @@ const BeVietnamPro = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Nvidia",
-  description: "Nvidia",
+  title: "Digieye",
+  description: "Digieye",
 };
 
 export default function RootLayout({
@@ -78,8 +79,8 @@ export default function RootLayout({
         {/* <Upbar /> */}
         <MiniUpbar />
         {children}
-        {/* <NvidiaFooter /> */}
-        {/* <CopyRightComponent /> */}
+        {/* <NvidiaFooter />
+        <CopyRightComponent /> */}
       </body>
     </html>
   );

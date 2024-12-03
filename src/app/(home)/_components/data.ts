@@ -9,9 +9,9 @@ export const slide1Data = {
         href: "/blogs/blog-1",
         tag: "Generative AI",
         type:"Blog",
-        title: "NVIDIA at Aws re:Invent 2024",
+        title: "Digieye at Aws re:Invent 2024",
         subtitle:
-          "Join NVIDIA at AWS at re:Invent to learn about the latest breakthroughs in generative AI.",
+          "Join Digieye at AWS at re:Invent to learn about the latest breakthroughs in generative AI.",
       },
       {
         image: "https://www.nvidia.com/en-us/home/_jcr_content/root/responsivegrid/nv_carousel_10568374/item_1722403062839.coreimg.100.850.jpeg/1732299019469/ai-agent-customer-service-rep.jpeg",
@@ -29,7 +29,7 @@ export const slide1Data = {
         href: "/blogs/blog-3",
         title: "Enhance Workflows With a Custom Slackbot LLM Agent",
         subtitle:
-          "Optimize productivity and communication with a custom Slackbot built on NVIDIA NIM and LangChain.",
+          "Optimize productivity and communication with a custom Slackbot built on Digieye NIM and LangChain.",
       },
       {
         image: "https://www.nvidia.com/en-us/home/_jcr_content/root/responsivegrid/nv_carousel_10568374/nv_teaser_copy_2006776514.coreimg.100.850.jpeg/1732299019502/sfg-softbank-ai-jp.jpeg",
@@ -38,7 +38,7 @@ export const slide1Data = {
         href: "/blogs/blog-4",
         title: "Enhance Workflows With a Custom Slackbot LLM Agent",
         subtitle:
-          "Optimize productivity and communication with a custom Slackbot built on NVIDIA NIM and LangChain.",
+          "Optimize productivity and communication with a custom Slackbot built on Digieye NIM and LangChain.",
       },{
         image: "https://www.nvidia.com/en-us/home/_jcr_content/root/responsivegrid/nv_carousel_10568374/item_1691512647007.coreimg.100.850.jpeg/1732299019566/japan-ai-summit-healthcare-and-robotics-multi-image-ari.jpeg",
         tag: "Artificial Intelligence",
@@ -46,25 +46,25 @@ export const slide1Data = {
         href: "/blogs/blog-5",
         title: "Enhance Workflows With a Custom Slackbot LLM Agent",
         subtitle:
-          "Optimize productivity and communication with a custom Slackbot built on NVIDIA NIM and LangChain.",
+          "Optimize productivity and communication with a custom Slackbot built on Digieye NIM and LangChain.",
       },
       
     ],
     quickLinks: [
       {
-        name: "NVIDIA Omniverse",
+        name: "Digieye Omniverse",
         href: "/nvidia-omniverse",
       },
       {
-        name: "NVIDIA NIM",
+        name: "Digieye NIM",
         href: "/nvidia-nim",
       },
       {
-        name: "NVIDIA Isaac",
+        name: "Digieye Isaac",
         href: "/nvidia-isaac",
       },
       {
-        name: "NVIDIA Jetson",
+        name: "Digieye Jetson",
         href: "/nvidia-jetson",
       },
     ],

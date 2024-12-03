@@ -13,7 +13,7 @@ export default function UseCasesSection() {
           Ignite Your Innovation
         </h2>
         <p className="text-center text-lg font-normal">
-          See how NVIDIA APIs support industry use cases and jump-start your AI
+          See how Digieye APIs support industry use cases and jump-start your AI
           development with curated examples.
         </p>
         <ul className="!mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
